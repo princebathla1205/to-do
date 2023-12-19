@@ -1,0 +1,8 @@
+file = open("files/members.txt",'r')
+text = file.readlines()
+file.close()
+user_input = input("Enter a new member: ")
+file = open("files/members.txt",'w')
+text.append(user_input + "\n")
+file.writelines(text)
+file.close()
